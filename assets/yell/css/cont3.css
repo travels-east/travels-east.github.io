@@ -1,0 +1,32 @@
+
+
+.homeim{
+  min-height: 90vh;
+  display: flex;
+align-items: center;
+  background: url('../../../bgimg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+padding-left: 25px;
+
+}
+.homeim .cont-block1{
+max-width: 70rem;
+
+}
+.homeim .cont-block1 h3{
+font-size: 2rem;
+text-transform: uppercase;
+color: cornsilk;
+line-height: 1.6;
+
+
+}
+.homeim .cont-block1 p{
+  font-size: 1rem;
+ font-weight: lighter;
+ line-height: 1.8;
+  color: rgb(197, 197, 197);
+  
+  padding: 1rem 0;
+  }

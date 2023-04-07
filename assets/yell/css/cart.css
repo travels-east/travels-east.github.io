@@ -1,0 +1,313 @@
+.noun{
+  font-size: 30px;
+  color: coral;
+
+  padding: 20px;
+  background-color: #3a3a3a9f;
+}
+.imager{
+  display: none;
+}
+.orderclaz{
+  
+  min-height: 100vh;
+  
+}
+.rad-label {
+  display: flex;
+  align-items: center;
+
+  border-radius: 100px;
+  padding: 14px 0px;
+  margin: 10px 0;
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+.rad-label:hover,
+.rad-label:focus-within {
+  background: rgba(255, 255, 255, 0.14);
+}
+.totall{
+  color: rgb(0, 245, 0);
+  font-size: 22px;
+  padding: 20px 0;
+}
+.rad-input {
+  position: absolute;
+  left: 0;
+  top: 500PX;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.rad-design {
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+
+  background: linear-gradient(to right bottom, hsl(281, 98%, 39%), hsl(286, 100%, 43%));
+  position: relative;
+}
+
+.rad-design::before {
+  content: '';
+
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+
+  background: hsl(0, 0%, 90%);
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+.rad-input:checked+.rad-design::before {
+  transform: scale(0);
+}
+
+.rad-text {
+  color: hsl(0, 0%, 100%);
+  margin-left: 14px;
+
+
+  font-size: 18px;
+  font-weight: 500;
+
+  transition: .3s;
+}
+
+.rad-input:checked~.rad-text {
+  color: hsl(0, 0%, 93%);
+}
+
+.checkbox{
+  background-color: rgb(22, 19, 11);
+}
+.pricer span{
+  
+  color: rgb(20, 220, 97);
+  font-size: 14px;
+}
+.cartclear{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: rgba(230, 0, 0, 0.664);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  transition: all 150ms;
+}
+.orderbut{
+  background:#742ECC;
+  border:0;
+  color:#fff;
+  padding:8px;
+  font-size:20px;
+ margin: 20px 0;
+  
+  
+  cursor:pointer;
+
+transition: .3s;
+border-radius: 5px;
+}
+.orderbut:hover{
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+          box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;}
+
+.dangerbut{
+  padding: 10px;
+  border: 0;
+ border-radius: 6px;
+  background: rgba(230, 0, 0, 0.664);
+ color: #FFF;
+margin-top: 30px;
+  cursor: pointer;
+font-size: 18px;
+transition: .3s;
+}
+
+.paym{
+  background-color: #1b1818;
+}
+.check1{
+  display: none;
+}
+.text-md-right i{
+  color: #FFF;
+  font-size: 18px;
+}
+.cartclear:hover, .cartclear:focus {
+  transform: rotateZ(90deg);
+  background: #db050598;
+}
+
+.container35 {
+  
+  min-height: 100vh;
+  
+  margin: 20px;
+
+  
+}
+
+.orderbox{
+ 
+  min-width: 300px;
+  max-width: 700px;
+  padding: 20px;
+ 
+  background: rgba(0,0,0,.5);
+
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+.orderbox h4{
+  padding: 5px 0;
+}
+
+.orderbox input{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background-color: #1b1818;
+}
+
+.titler a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  
+}
+
+
+
+@import "compass/css3";
+/*
+ RESPONSTABLE 2.0 by jordyvanraaij
+ Designed mobile first!
+ If you like this solution, you might also want to check out the 1.0 version:
+ https://gist.github.com/jordyvanraaij/9069194
+ */
+.responstabled2 {
+  margin-top: 10px;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.253);
+  color: #024457;
+  border: 1px solid #000;
+border-collapse: collapse;
+  
+}
+.responstabled2 tr {
+  
+ font-size: 16px;
+}
+
+
+.responstabled2 tr:nth-child(odd) {
+  background-color: #eaf3f31c;
+}
+.responstabled2 th {
+
+  
+  background-color: rgba(0, 95, 173, 0.527);
+  color: #FFF;
+  
+}
+.responstabled2 th:first-child {
+ 
+  display: none;
+  
+}
+.responstabled2 th:nth-child(2) {
+  display: table-cell;
+
+  
+}
+.responstabled2 th:nth-child(3) {
+  display: table-cell;
+ 
+}
+.responstabled2 th:nth-child(2) span {
+  display: none;
+}
+.responstabled2 th:nth-child(3):after {
+  content: attr(data-th);
+}
+.responstabled2 th, .responstabled2 td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #000;
+  font-size: 12px;
+}
+
+.responstabled2 th {
+  text-align: center;
+  padding: 16px;
+  border: 1px solid #000;
+}
+#msCart p{
+  color: rgb(89, 255, 38);
+  line-height: 29px;
+ font-size: 18px;
+ border: 1px solid rgba(109, 107, 107, 0.747);
+ border-radius: 10px;
+ margin: 20px 0;
+ padding: 40px 10px;
+ font-weight: 700;
+}
+
+
+@media (min-width: 480px) {
+  .responstabled2 th, .responstabled2 td {
+    display: table-cell;
+    font-size: 16px;
+
+  }
+  .pricer span{
+  
+    color: rgb(20, 220, 97);
+    font-size: 20px;
+  }
+  .titler a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .responstabled2 th:first-child {
+ 
+    display: table-cell;
+    
+  }
+}
+@media (max-width: 780px) {
+  .responstabled2 td {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+}
